@@ -1,0 +1,17 @@
+.box {
+  display: flex;
+}
+
+.inline-box {
+  display: inline-flex;
+}
+
+.border {
+  border: 1px solid red;
+}
+.w-50 {
+  width: 45%;
+}
+.w-30 {
+  width: 30%;
+}

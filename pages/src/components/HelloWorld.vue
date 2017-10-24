@@ -1,53 +1,84 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      <br>
-      <li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
-  </div>
+    <!--<div class="hello" style="flex-direction: column-reverse;">-->
+      <!--<h1 class="border">{{ msg }}1</h1>-->
+      <!--<h1 class="border">{{ msg }}2</h1>-->
+      <!--<h1 class="border">{{ msg }}3</h1>-->
+    <!--</div>-->
+
+    <!--<div class="hello box" style="flex-wrap: wrap-reverse;">-->
+      <!--<h1 class="border w-50">{{ msg }}1</h1>-->
+      <!--<h1 class="border w-50">{{ msg }}2</h1>-->
+      <!--<h1 class="border w-50">{{ msg }}3</h1>-->
+    <!--</div>-->
+
+    <!--<div class="hello box" style="flex-flow:row-reverse wrap-reverse;">-->
+      <!--<h1 class="border ">{{ msg }}1</h1>-->
+      <!--<h1 class="border ">{{ msg }}2</h1>-->
+      <!--<h1 class="border ">{{ msg }}3</h1>-->
+    <!--</div>-->
+
+    <!--<div class="hello box" style="justify-content:center">-->
+      <!--<h1 class="border ">{{ msg }}1</h1>-->
+      <!--<h1 class="border ">{{ msg }}2</h1>-->
+      <!--<h1 class="border ">{{ msg }}3</h1>-->
+    <!--</div>-->
+
+    <!--<div style="width: 1500px;height: 500px;border: 1px solid blue">-->
+      <!--<div class="hello box" style="justify-content:space-around">-->
+        <!--<h1 class="border ">{{ msg }}1</h1>-->
+        <!--<h1 class="border ">{{ msg }}2</h1>-->
+        <!--<h1 class="border ">{{ msg }}3</h1>-->
+      <!--</div>-->
+    <!--</div>-->
+
+
+    <!--<div >-->
+      <!--<div style="width: 1000px;height: 500px;border: 1px solid blue;align-items:baseline;justify-content: center;" class="hello box" >-->
+        <!--<h1 class="border" style="height: 200px;">{{ msg }}1</h1>-->
+        <!--<h1 class="border ">{{ msg }}2</h1>-->
+        <!--<h1 class="border ">{{ msg }}3</h1>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div id="main">-->
+      <!--<div style="background-color:coral;"></div>-->
+      <!--<div style="background-color:lightblue;"></div>-->
+      <!--<div style="background-color:khaki;"></div>-->
+    <!--</div>-->
+    <div id="main">
+      <div style="background-color:coral;"></div>
+      <div style="background-color:lightblue;"></div>
+      <div style="background-color:pink;"></div>
+    </div>
+
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
+  export default {
+    name: 'HelloWorld',
+    data () {
+      return {
+        msg: 'hello world'
+      }
     }
   }
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1, h2 {
-  font-weight: normal;
-}
+<style type="text/css">
+  #main {
+    width: 170px;
+    height: 300px;
+    border: 1px solid #c3c3c3;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-content: flex-start;
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
+  }
 
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
+  #main div {
+    width: 70px;
+    height: 70px;
+  }
 </style>
