@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "maoruibin001 <www.maoruibin@163.com>",
+  "main":"./app.js",
   "private": true,
   "scripts": {
+    "start": "node ./app.js",
     "dev": "node page/build/dev-server.js",
-    "start": "npm run dev",
+    "start2": "npm run dev",
     "build": "node page/build/build.js",
     "unit": "cross-env BABEL_ENV=test karma start page/test/unit/karma.conf.js --single-run",
     "test": "npm run unit",
