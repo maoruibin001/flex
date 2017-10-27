@@ -1,15 +1,54 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset=utf-8>
-    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
-    <title>page</title>
-    <link href=/static/css/app.365e23b81f82344f472101b6035e810b.css rel=stylesheet>
-</head>
-<body>
-<div id=app></div>
-<script type=text/javascript src=/static/js/manifest.52c880e98ac79a060b7e.js></script>
-<script type=text/javascript src=/static/js/vendor.677ef0c9485c32b4f6a9.js></script>
-<script type=text/javascript src=/static/js/app.1c1ae8493eb3a1c076c8.js></script>
-</body>
-</html>
+Html Webpack Plugin:<pre>
+  Error: Child compilation failed:
+  Entry module not found: Error: Can't resolve 'D:\github\flex\index.html' in 'D:\github\flex':
+  Error: Can't resolve 'D:\github\flex\index.html' in 'D:\github\flex'
+  
+  - compiler.js:76 
+    [pages]/[_html-webpack-plugin@2.30.1@html-webpack-plugin]/lib/compiler.js:76:16
+  
+  - Compiler.js:304 compile
+    [pages]/[_webpack@3.8.1@webpack]/lib/Compiler.js:304:11
+  
+  - Compiler.js:514 applyPluginsAsync.err
+    [pages]/[_webpack@3.8.1@webpack]/lib/Compiler.js:514:14
+  
+  - Tapable.js:202 next
+    [pages]/[_tapable@0.2.8@tapable]/lib/Tapable.js:202:11
+  
+  - CachePlugin.js:78 Compiler.<anonymous>
+    [pages]/[_webpack@3.8.1@webpack]/lib/CachePlugin.js:78:5
+  
+  - Tapable.js:206 Compiler.applyPluginsAsyncSeries
+    [pages]/[_tapable@0.2.8@tapable]/lib/Tapable.js:206:13
+  
+  - Compiler.js:511 compilation.seal.err
+    [pages]/[_webpack@3.8.1@webpack]/lib/Compiler.js:511:11
+  
+  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
+    [pages]/[_tapable@0.2.8@tapable]/lib/Tapable.js:195:46
+  
+  - Compilation.js:680 self.applyPluginsAsync.err
+    [pages]/[_webpack@3.8.1@webpack]/lib/Compilation.js:680:19
+  
+  - Tapable.js:202 next
+    [pages]/[_tapable@0.2.8@tapable]/lib/Tapable.js:202:11
+  
+  - index.js:126 LastCallWebpackPlugin.process
+    [pages]/[_last-call-webpack-plugin@2.1.2@last-call-webpack-plugin]/index.js:126:12
+  
+  - index.js:197 Compilation.<anonymous>
+    [pages]/[_last-call-webpack-plugin@2.1.2@last-call-webpack-plugin]/index.js:197:12
+  
+  - Tapable.js:206 Compilation.applyPluginsAsyncSeries
+    [pages]/[_tapable@0.2.8@tapable]/lib/Tapable.js:206:13
+  
+  - Compilation.js:671 self.applyPluginsAsync.err
+    [pages]/[_webpack@3.8.1@webpack]/lib/Compilation.js:671:11
+  
+  - Tapable.js:202 next
+    [pages]/[_tapable@0.2.8@tapable]/lib/Tapable.js:202:11
+  
+  - index.js:126 LastCallWebpackPlugin.process
+    [pages]/[_last-call-webpack-plugin@2.1.2@last-call-webpack-plugin]/index.js:126:12
+  
+</anonymous></anonymous></pre>
